@@ -11,10 +11,11 @@ Work out which mode the user needs from the request; if it's unclear, assume **V
 
 ## Mode 1 — Variants (the 2×2 Remix Grid)
 
-Start from the current ad. If there's no Spike Core on record, state the emotional truth the ad is built on in one sentence first.
+Start from the current ad. If there's no Spike Core on record, state the emotional truth the ad is built on in one sentence first. If the user supplies neither the emotional truth nor an ad, choose one *explicitly labelled creative assumption* rather than passing imagined market research off as fact. Never invent a current ad image.
 
+0. **Freeze the test:** use the same brand, audience, product truth, offer, CTA, platform, aspect ratio and placement for all four variants. Only two factors can change: copy (A/B) and visual execution (A/B). Never invent proof or objective claims.
 1. **Punchline A** = the current emotional spike winner. **Punchline B** = a sharper *or* softer remix of the same truth (switch the weapon: Shame Mirror ↔ Contradiction Cut ↔ Identity Unlock).
-2. **Visual A** = the best scroll-stopper format. **Visual B** = a secondary format native to the same placement.
+2. **Visual A** = the best layout for the chosen placement. **Visual B** = a meaningfully different composition or ownable object/gesture, still for the *same placement*. Visual A should remain visually consistent in AA and BA; Visual B must remain consistent in AB and BB.
 3. Build the grid:
 
 | | Visual A | Visual B |
@@ -22,8 +23,8 @@ Start from the current ad. If there's no Spike Core on record, state the emotion
 | **Copy A** | Punchline A + Format A | Punchline A + Format B |
 | **Copy B** | Punchline B + Format A | Punchline B + Format B |
 
-4. Render all four as mockups (SVG at the placement's proportions; see the `ad-blueprint` skill's `references/render-mockup.md` when available). Name them `ad-<slug>-AA.svg`, `-AB`, `-BA`, `-BB`.
-5. Score each on the 5D grid (Clarity, Surprise, Emotion, Recognition, Visual Power, 1–5 each). For an unbiased ranking, run the `ad-critique` skill's cold review mode on all four without saying which one you prefer. Ask: which **stings faster**, which is **most shareable**, which would trigger **DMs, not just likes**? Recommend the one or two with the fastest hit and cleanest silhouette.
+4. When OpenAI artifact tools exist, render and inspect all four mockups with identical aspect ratios (see `ad-blueprint/references/render-mockup.md`). Name verified files `ad-<slug>-AA.svg`, `-AB`, `-BA`, `-BB`. Otherwise provide four detailed production-ready layouts and state **not rendered**, never invent file paths.
+5. Score each on the 5D grid as a **subjective creative comparison**. An actual independent-context reviewer may be used only if supported and actually launched; otherwise label the ranking internal. Test creative preference and objective-relevant results with real viewers before choosing a winning campaign.
 
 ## Mode 2 — Launch Checklist (the Screenshot Protocol)
 
@@ -39,7 +40,7 @@ Start from the current ad. If there's no Spike Core on record, state the emotion
 | Recognition | Would the tribe whisper "that's me"? |
 | Visual Power | Would someone screenshot or save it without context? |
 
-**20–25** post now · **16–19** tweak one word, one format, one visual · **below 16** return to the Spike Core or the Flip Grid.
+**20–25** ready for an audience test · **16–19** revise · **below 16** rebuild. Model scores never establish campaign success.
 
 **Platform fit:**
 
@@ -84,7 +85,7 @@ Ask for the numbers if the user has them (reach, saves, shares, DMs, clicks). Lo
 2. For each core, write one punchline per weapon (Shame Mirror, Contradiction Cut, Identity Unlock).
 3. Pair each punchline with the two formats the Style Mapper suggests for its emotion.
 4. Adapt to each placement with the platform grids — never just resize.
-5. Score every ad on the 5D grid and keep only **20+** for launch; park the 16–19s for a tweak round; drop the rest.
+5. Score every ad on the 5D grid and prioritize **20+** for real audience testing; refine 16–19s and rebuild weak concepts. Do not declare launch confidence from model self-scoring.
 
 Present the batch as a matrix (core × weapon × format × placement × score) and render mockups for the launch set only.
 

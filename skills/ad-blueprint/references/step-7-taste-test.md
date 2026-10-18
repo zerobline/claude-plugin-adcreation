@@ -26,11 +26,13 @@ Rate 1–5 in each dimension:
 
 Score:
 
-- **20–25** → Publish. Screenshot bait.
-- **16–19** → Tweak one visual, one word, one tone.
+- **20–25** → Strong *candidate for real audience testing*, not proven performance.
+- **16–19** → Revise the concept and test again.
 - **Below 16** → Rebuild from the emotional Spike Core.
 
 Bonus filter: *"Would someone share this with one word: 'Mood'?"*
+
+**The scores are subjective creative assessments.** Do not claim recall, emotional impact, engagement or sales without real observations.
 
 ## 7.2 Test variants rapidly — the A/B War Room
 
@@ -60,7 +62,7 @@ Get cold eyes. Not compliments.
 - "What's the first emotion this gave you?"
 - "If this was made for you, would it feel like it *gets* you?"
 
-**2. AI ad critique.** Hand the ad to a reviewer that hasn't seen how it was made, with the brief:
+**2. AI ad critique.** When a truly fresh-context AI reviewer can be launched, pass only the finished artifact and brief. Otherwise conduct an **internal same-context critique**, explicitly label it as such and do not claim independence:
 
 > "Act like a savage creative director. Tear this ad apart. Be honest, not polite. Rate clarity, emotional punch, visual power."
 
