@@ -1,0 +1,21 @@
+name: Validate OpenAI plugin fixtures
+
+on:
+  push:
+    branches: [openai-only-v0.3.0]
+  pull_request:
+    paths:
+      - 'plugin.json'
+      - 'skills/**'
+      - 'tests/**'
+      - '.claude-plugin/**'
+      - '.github/workflows/acceptance-fixtures.yml'
+  workflow_dispatch:
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate manifest, skill structure, and fixture SVG
+        run: python3 tests/check_fixtures.py
