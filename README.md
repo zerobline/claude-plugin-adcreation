@@ -2,7 +2,7 @@
 
 **Static advertising built around a recognisable emotional truth, a defensible product promise, and a visual that works in the actual placement.**
 
-Version **0.3.0** is an **OpenAI-only skills plugin** for ChatGPT and Codex. No Claude-specific manifest, MCP server, authentication, external account or background service is needed.
+Version **0.3.1** is an **OpenAI-only skills plugin** for ChatGPT and Codex. No Claude-specific manifest, MCP server, authentication, external account or background service is needed.
 
 ## Workflow
 
