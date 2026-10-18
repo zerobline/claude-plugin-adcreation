@@ -1,103 +1,51 @@
-# Mastermind Ad Engine
+# Mastermind Ad Engine — OpenAI
 
-**Static ads people actually feel — billboards, posters, print, and social statics.**
+**Static advertising built around a recognisable emotional truth, a defensible product promise, and a visual that works in the actual placement.**
 
-Most ads don't fail because they're ugly, too long, or missing a CTA. They fail because they don't make anyone *feel* anything. This plugin teaches Claude the Mastermind method: build every ad from one raw emotional truth outward, flip the category's lazy logic, compress it into a line that lands in three seconds, frame it in a visual that delivers the feeling, and score it honestly before it ships. The ad is then rendered as an SVG mockup you can look at, test, and hand to a designer.
+Version **0.3.0** is an **OpenAI-only skills plugin** for ChatGPT and Codex. No Claude-specific manifest, MCP server, authentication, external account or background service is needed.
 
-Works with **Claude** (Claude Code, claude.ai, and the desktop app) and **OpenAI** (Codex and ChatGPT). It's a skills-only plugin, so the same files serve both.
+## Workflow
 
-![Example billboard: a Mirror Split. Left side, white: "SAYS — Fully booked." Right side, black: "FEELS — Still terrified." with "terrified." in red. Sign-off: "Steadybook. Know next month." (fictional brand)](assets/example-billboard.png)
+**Clarify → Flip → Write → Design → Tribe → Platform → Taste Test**
 
-![Example billboard with a person: a pictogram-style night-shift nurse in profile, eyes closed, holding a steaming amber cup. Line: "Your night ends here." Sign-off: "[Café name] · Open 05:30"](assets/example-figure-billboard.png)
+In addition to the original framework, the OpenAI edition includes a product-truth and claim ledger, Symbol Lock, placement-first final rendering, capability-aware SVG/image output, and an evidence-honest creative assessment. A 20+/25 creative score means *test this concept with actual viewers* — not "guaranteed to work".
 
-![Example Instagram static: Bold Poster. "You're not behind. You're building in silence." with "in silence." in green](assets/example-instagram.png)
+| Skill | Purpose |
+| --- | --- |
+| `skills/ad-blueprint/SKILL.md` | Build a complete billboard, poster or social ad and deliver its build sheet and visual when possible |
+| `skills/quick-ad/SKILL.md` | Develop a lean ad concept quickly |
+| `skills/ad-critique/SKILL.md` | Critique an actual supplied ad, separating observations from assumptions |
+| `skills/ad-remix/SKILL.md` | Make a controlled 2×2 copy × visual grid, diagnose failures and scale concepts |
 
-*All three examples were rendered from the templates the plugin uses. Steadybook is a fictional brand.*
+These are instruction-based skills. They do **not** give independent access to image editing, advertising accounts, audience analytics or unrelated files. The current OpenAI surface determines which artifact tools exist. Skills must not claim a file was produced without actually verifying it.
 
-### Ads with people
+## Install and submit
 
-When the truth lives in a person's body rather than in the words — slumped shoulders at 5:30 a.m., eyes closed over a coffee — the plugin uses the **Human Moment** format and puts a person in the ad, in one of two ways:
+A portable root `plugin.json` contains `extensions.com.openai`; `.agents/plugins/marketplace.json` provides Codex marketplace metadata. On supported Codex installations:
 
-- **Vector figure:** the assistant draws the person directly in the mockup as a bold, pictogram-style figure (like the nurse above). This works with no extra tools.
-- **Photo:** the assistant writes a photo brief you can paste into any image generator or hand to a photographer. Send the photo back, and it drops the photo into the layout in black and white so your accent colour stays the only colour.
-
-## The method
-
-```
-Clarify → Flip → Write → Design → Tribe → Platform → Taste Test
-```
-
-1. **Clarify the emotional truth** — Shame Scanner, Contradiction Stack, and the Spike Meter find the *Spike Core*: the contradiction your audience lives with and hides.
-2. **Flip the category logic** — the Default Belief Scanner and Reframe Reactor Grid turn a safe assumption into relief; a Rebel Archetype gives it a voice.
-3. **Write a sticky punchline** — one emotional weapon (Shame Mirror, Contradiction Cut, Identity Unlock), the 3-Second Truth Test, and the Micro-Loop.
-4. **Design the visual twist** — "words or a body?" decides between type and people; the Style Mapper matches emotion to format (Bold Poster, Screenshot Confession, Mirror Split, Receipt Stack, Meme Flip, Human Moment); the Chokehold Constraints force clarity.
-5. **Identify the micro-tribe** — the Identity Grid ("I am… / But I feel… / And I wish…"), Shadow Matchmaker archetypes, and the Recognition Filter.
-6. **Match the platform** — Instagram, TikTok, LinkedIn, email, and out-of-home rules for billboards, street and transit posters, and print.
-7. **Taste test and iterate** — the 5D Taste Calibration Grid, the A/B War Room 2×2, and the Reality Loop.
-
-## What's inside
-
-| Component | Type | What it does |
-|---|---|---|
-| `ad-blueprint` | Skill | Runs the full 7-step build — guided or on autopilot — and delivers an Ad Build Sheet plus a rendered mockup. |
-| `quick-ad` | Skill | The 15-minute Quickstart Builder: one truth, one punchline formula, one format, a three-question test. |
-| `ad-critique` | Skill | Scores an existing ad or mockup like a cold-blooded creative director and gives concrete rewrites. Its cold review mode judges a finished ad (or ranks variants) without the reasoning behind it, so scores aren't self-graded. |
-| `ad-remix` | Skill | 2×2 variants, the pre-launch checklist, remix recipes for ads that flopped, and scaling one idea into 5–20 ads. |
-
-The `ad-blueprint` skill carries the full reference set: each step's tools, the Spike Vault of scored example lines by audience, 25 punchline templates, mockup sizes for common billboard, poster, and social formats, and a complete worked example.
-
-## Install
-
-**Claude Code**
-
-```
-/plugin marketplace add zerobline/claude-plugin-adcreation
-/plugin install mastermind-ad-engine@zerobline-adcreation
-```
-
-**Claude apps (claude.ai and desktop):** once the plugin is listed in the plugin directory, add it from **Customize → Plugins**. Until then, download this repository as a ZIP and upload it there.
-
-**Codex CLI**
-
-```
+```text
 codex plugin marketplace add zerobline/claude-plugin-adcreation
 codex plugin add mastermind-ad-engine@zerobline-adcreation
 ```
 
-**ChatGPT and the Codex app:** once the plugin is listed in OpenAI's plugin directory, install it from **Plugins**. Workspace admins can also import this repository as a marketplace from GitHub.
+For the public ChatGPT Plugin Directory, package the repository as a ZIP and submit a **Skills only** draft at https://platform.openai.com/plugins . A GitHub repository by itself is not a public listing. Current OpenAI packaging: https://developers.openai.com/plugins/build/plugins .
 
-## Use it
+## Five acceptance cases
 
-Just describe the ad you need; the right skill loads on its own. In Claude Code you can also call the skills directly, for example `/mastermind-ad-engine:ad-blueprint`.
+See [tests/ACCEPTANCE.md](tests/ACCEPTANCE.md) for full input fixtures, pass/fail checks and live-test limitations.
 
-- "Make a billboard for our bookkeeping app for freelancers — 48-sheet, city centre."
-- "Billboard for our café that opens at 5:30 for night-shift nurses — show a person, not just text."
-- "Here's the photo I generated [image]. Put it into the ad."
-- "Walk me through building an Instagram ad for my yoga studio, step by step."
-- "I need a poster line for our café's new opening hours, quickly."
-- "Here's our current LinkedIn ad [image]. Rate it and tell me what to fix."
-- "Give me four variants of this ad to test."
-- "This post got zero shares. Remix it."
+1. Make a 48-sheet billboard for a bookkeeping service aimed at anxious freelancers.
+2. Create a café poster for night-shift nurses. Show a person.
+3. Critique this existing ad without knowing why it was designed. (Attach the actual ad.)
+4. Give me four Instagram A/B concepts based on the same emotional truth.
+5. Adapt an Instagram ad into a motorway billboard. (Provide the source ad.)
 
-## What it does and doesn't do
+## Limits and safety
 
-- **Runs nothing external.** No MCP servers, hooks, or scripts, and no network requests. The plugin is instructions and reference material only.
-- **Writes files only when building mockups:** self-contained SVG (or HTML) files in your working folder, named `ad-<slug>-<placement>.svg`. Photos you provide are placed into the layout by reference or embedded in the file; nothing is uploaded anywhere.
-- **Doesn't generate photos itself.** It draws vector figures and writes photo briefs; you choose where to generate or shoot the photo.
-- **Mockups aren't print files.** Final artwork still needs to be produced to the media owner's or printer's spec (size, bleed, colour profile, resolution).
-- **Mirror, don't wound.** The method exposes truths your audience recognises in themselves; it's built to end in relief, not humiliation. It also steers away from invented testimonials and statistics, imitating real people or brand interfaces, and copyrighted meme or stock imagery.
+- No fabricated statistics, comparisons, testimonials, efficacy claims, availability hours or product features.
+- Do not imply real customer testing or independence if the model is critiquing its own work.
+- Hard brand/legal constraints override black-white-accent design defaults.
+- SVG or generated mockups are concepts, **not** printer-ready art. Check media owner specs, safe areas, bleed, color and approval rules.
+- No external service is connected **by this plugin**. Other OpenAI tools follow their own permissions and data policies.
 
-## Repository layout
-
-| Path | Used by |
-|---|---|
-| `skills/` | Claude and OpenAI: the four skills and their references |
-| `plugin.json` | OpenAI: portable manifest with the Codex/ChatGPT listing (icon, logo, screenshots, prompts) |
-| `.agents/plugins/marketplace.json` | Codex: lets `codex plugin marketplace add` install from this repo |
-| `.claude-plugin/plugin.json` | Claude: plugin manifest |
-| `.claude-plugin/marketplace.json` | Claude Code: lets `/plugin marketplace add` install from this repo |
-| `assets/` | Icon, logo, and example ads for both listings |
-
-## License
-
-[MIT](LICENSE) © zerobline
+MIT © zerobline.
