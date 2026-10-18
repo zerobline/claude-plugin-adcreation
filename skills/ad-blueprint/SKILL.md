@@ -119,7 +119,7 @@ Details, including billboard, poster, and print placements: `references/step-6-p
 Most "pretty good" ads settle before they sting. Score, collide variants, and get cold eyes.
 
 1. Score the **finished visual**, not merely the concept text, with 5D Taste Calibration — Clarity, Surprise, Emotion, Recognition, Visual Power (1–5 each). **20–25 = prioritize real audience testing**, **16–19 = revise**, **below 16 = rebuild**. It is *subjective creative opinion*, not empirical proof.
-2. Get a fresh-context critique **only if the environment actually supports independent context**, passing only the finished artifact, placement and one-sentence audience. Otherwise do an **internal same-context critique**, state that it is not blind or independent, and avoid declaring self-scores validated.
+2. Get a fresh-context critique **only if the environment actually supports independent context**, passing only the finished artifact, placement and one-sentence audience. Otherwise do an **internal same-context critique**, state that it is not independent or blind, and avoid declaring self-scores validated.
 3. Build the **controlled A/B War Room 2×2**: punchline A/B × genuinely different visual A/B, with audience, product truth, placement, CTA and offer *fixed*. Rank as creative hypotheses only.
 4. Give a **Reality Loop** plan: 3-second comprehension/recall and real micro-audience feedback. Track objective-appropriate observed metrics (reach, engagement, leads or conversion where applicable); do not treat the model's estimates as actual audience response.
 
@@ -145,7 +145,7 @@ Self-scores inflate; inflated scores ship weak ads.
 
 ## Deliverable: the Ad Build Sheet
 
-Finish with a build sheet plus the mockup file. Keep it scannable:
+Finish with a build sheet plus a **verified** mockup file/preview when tooling supports it, or an explicit not-rendered layout plan when it does not. Keep it scannable:
 
 ```markdown
 # Ad Build Sheet — [product] · [placement]
