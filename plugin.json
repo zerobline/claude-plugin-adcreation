@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mastermind-ad-engine",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Create and evaluate static ads with Mastermind's seven-stage creative workflow, evidence-aware claims, symbolic visual design, platform adaptation, critique and controlled A/B variants.",
   "author": {
     "name": "zerobline",
@@ -36,13 +36,15 @@
         "defaultPrompt": [
           "Make a 48-sheet billboard for a bookkeeping service aimed at anxious freelancers.",
           "Create a café poster for night-shift nurses. Show a person.",
-          "Critique an existing ad and separate observations from your opinion.",
-          "Generate four controlled Instagram A/B ad variants."
+          "Critique an existing ad and separate observations from your opinion."
         ],
         "brandColor": "#E0282E",
         "brandColorDark": "#FF4D4F",
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png"
+      },
+      "publication": {
+        "release_notes": "OpenAI-only release with claim substantiation, symbol ownership, placement-aware rendering and evidence-honest critique. Includes controlled A/B variants and five acceptance scenarios."
       }
     }
   }
