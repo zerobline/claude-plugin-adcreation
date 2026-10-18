@@ -26,10 +26,10 @@ Run these prompts in clean OpenAI ChatGPT/Codex sessions with the plugin enabled
 
 | Case | Static workflow reviewed | Deterministic artifact checks | Real installed OpenAI run |
 |---|---|---|---|
-| 1 | pending | pending | not run |
-| 2 | pending | pending | not run |
-| 3 | pending | pending | not run |
-| 4 | pending | pending | not run |
-| 5 | pending | pending | not run |
+| 1 | reviewed | pass — scripted artifact assertions | not run |
+| 2 | reviewed | pass — scripted silhouette/format checks | not run |
+| 3 | reviewed | pass — evidence-label fixture checks | not run |
+| 4 | reviewed | pass — controlled 2×2 assertions | not run |
+| 5 | reviewed | pass — copy/dimension/QR checks | not run |
 
-Do not mark any real installed-run test "passed" unless the OpenAI plugin actually activated and executed on the supplied prompt. An explicit "not rendered" fallback is **honest** but does not pass a test asking for a visual when rendering tools should be available.
+These deterministic assertions are run via GitHub Actions using `python3 tests/check_fixtures.py` (8 unit tests). They check the provided *sample artifacts* and package structure, not full visual quality or real model skill execution.\n\nDo not mark any real installed-run test "passed" unless the OpenAI plugin actually activated and executed on the supplied prompt. An explicit "not rendered" fallback is **honest** but does not pass a test asking for a visual when rendering tools should be available.
