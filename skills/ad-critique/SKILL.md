@@ -7,6 +7,14 @@ description: Critiques and scores an existing ad, billboard, poster, social stat
 
 Judge the ad the way the audience meets it: fast, distracted, and uninterested. Be honest, not polite. Critique the work, never the person.
 
+## OpenAI evidence and provenance gate
+
+- **Never invent an existing ad.** If the user says "this ad" but supplied no image, file, text, or visual description, ask for the actual artifact. Do not score an unseen ad. Text-only critiques must disclose that no image was inspected.
+- Report **observable facts** (exact words, font count, colors, ratio, small text, missing apparent brand) separately from **interpretive judgments** ("may confuse the audience", "likely too complex") and **real outcomes** (only measured reach, recall, CTR, revenue etc. supplied by the user).
+- The 5D rubric is a **subjective creative score**, not external validation or predicted conversion. 20+ means a good candidate for *audience testing*, never automatically publish.
+- A model critiquing its own work in a shared conversation is NOT a blind or independent reviewer. State "internal same-context critique". Only claim fresh-context review when one actually happened; a new roleplay persona does not create blindness.
+- Identify unsubstantiated guarantees, statistics, testimonials, comparative or regulated claims before recommending use.
+
 ## Inputs
 
 - **The ad**: an image or mockup file (open and look at it), or the copy plus a description of the visual.
@@ -87,10 +95,13 @@ When the verdict is Rebuild and the `ad-blueprint` skill is available, offer to 
 ## Output
 
 ```markdown
+## Provenance
+Artifact inspected: [actual image | supplied text/description] · Review context: [fresh independent | internal same-context] · Observed campaign evidence: [none | provided metrics]
+
 ## First glance
 Says: … · Feels: … · Eye lands on: …
 
-## Verdict: [Publish | Tweak | Rebuild] — xx/25
+## Subjective creative verdict: [Audience-test candidate | Revise | Rebuild] — xx/25
 Clarity x · Surprise x · Emotion x · Recognition x · Visual x
 Spike Meter (line): x.x · Scroll/Glance Test: x/4 · Recognition: xx/20 (if scored)
 
@@ -117,10 +128,10 @@ The peer questions come from the Reality Loop: the user should still put the ad 
 
 ## Cold review mode — fresh eyes on a finished ad
 
-Use this mode when another skill (the `ad-blueprint` Step 7, or `ad-remix` variants) hands over a finished ad for the method's "test it on someone cold" check, or when the user asks which of several variants to run. Self-scoring inflates; the cold review exists to stop that.
+Use this mode when another skill (the `ad-blueprint` Step 7, or `ad-remix` variants) hands over a finished ad for the method's "test it on someone cold" check, or when the user asks which of several variants to run. Self-scoring can inflate. Only fresh-context review provides a degree of reviewer separation; it does not replace real audience testing.
 
 - **Judge only what's handed over:** the line, the mockup (open it and look before anything else), the placement, and a one-sentence audience. Ignore any Spike Core, build reasoning, or earlier scores, even if they're visible in the conversation, and don't ask for the creator's intentions.
-- **When the environment can start a fresh-context subagent,** the calling skill should run this mode there, passing only those four inputs. That's the closest thing to a stranger's first glance.
+- **When the environment can start a fresh-context subagent,** the calling skill should run this mode there, passing only those four inputs. State explicitly this was an independent-context *AI* review, not a human audience test.
 - **Stance:** a savage creative director seeing the ad for the first time. Honest, not polite; critique the work, never the people who made it. One question matters: does it make the intended audience feel recognised in under three seconds?
 - **Steps:** first glance (what it says, what it makes you feel, where the eye lands) → the truth it seems built on → the 5D grid with one blunt sentence per score → verdict → kill list of constraint violations → the one fix that matters most → up to three rewritten lines.
 - **Several variants:** score each, then rank them by which stings fastest and which is most shareable, without being told which one the author prefers.
@@ -130,7 +141,7 @@ Compact output, under 250 words per ad, no pleasantries, no praise you don't mea
 ```
 FIRST GLANCE: says … / feels … / eye lands on …
 TRUTH IT'S BUILT ON: …
-5D: Clarity x · Surprise x · Emotion x · Recognition x · Visual x = xx/25 → VERDICT
+5D subjective concept rating: Clarity x · Surprise x · Emotion x · Recognition x · Visual x = xx/25 → VERDICT (audience-test candidate / revise / rebuild)
 WHAT'S KILLING IT: …
 FIX FIRST: …
 REWRITES: "…" · "…" · "…"
