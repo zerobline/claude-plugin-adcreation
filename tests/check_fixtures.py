@@ -22,7 +22,8 @@ class OpenAIPluginFixtureTests(unittest.TestCase):
         self.assertEqual(m["version"], "0.3.1")
         self.assertEqual(m["name"], "mastermind-ad-engine")
         self.assertIn("com.openai", m["extensions"])
-        self.assertNotIn("screenshots", m["extensions"]["com.openai"]["interface"])\n        self.assertLessEqual(len(m["extensions"]["com.openai"]["interface"]["defaultPrompt"]), 3)
+        self.assertNotIn("screenshots", m["extensions"]["com.openai"]["interface"])
+        self.assertLessEqual(len(m["extensions"]["com.openai"]["interface"]["defaultPrompt"]), 3)
         self.assertFalse((ROOT / ".claude-plugin").exists())
         self.assertFalse((ROOT / "mcp.json").exists())
 
