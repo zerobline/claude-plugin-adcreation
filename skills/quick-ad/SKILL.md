@@ -7,11 +7,13 @@ description: Builds a scroll-stopping static ad in about 15 minutes with the Mas
 
 The shortcut version of the Mastermind method for beginners, overthinkers, time-crunched creators, and teams that need fast output. Hand the user structure, format, and fire, step by step. Results before perfection.
 
-Assume the user is overwhelmed, not a copywriter, and doesn't know what to say. That's fine — the structure does the work.
+Use a concise, respectful workflow without assumptions about the user's competence. Creativity judgments here are hypotheses, not measured audience behavior.
 
 ## Inputs
 
 Ask only for what's missing, in one message: what is being advertised, who it's for, and where it will run. If the user says "just make something", pick reasonable assumptions and state them in one line.
+
+Before Step 1, note user-provided product facts versus assumptions; never invent hours, quantified proof, testimonials, capabilities or guarantees. Brand and legal constraints outrank black/white/accent defaults.
 
 ## Step 1 — Pick the emotional truth
 
@@ -63,11 +65,11 @@ Pick the tone that fits the tribe. Don't explain — echo their thoughts. Billbo
 
 ## Step 5 — Render it
 
-Render a self-contained SVG mockup at the placement's proportions (Instagram 1080×1350, story 1080×1920, LinkedIn 1200×627, 48-sheet billboard 2400×1200, US bulletin 2400×700, portrait poster 1414×2000). Use `Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif`, weight 900 for the line, typographic apostrophes, and the accent on the one word that stings.
+If an artifact tool is available in the OpenAI surface, render a self-contained SVG mockup at the placement's proportions (Instagram 1080×1350, story 1080×1920, LinkedIn 1200×627, 48-sheet billboard 2400×1200, US bulletin 2400×700, portrait poster 1414×2000). Use `Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif`, weight 900 for the line, typographic apostrophes, and the accent on the one word that stings.
 
 For a Human Moment, draw the person directly as a bold vector figure: a few big shapes (head, neck, torso cropped by the bottom edge, thick round-capped limbs), profile or three-quarter back, a minimal or no face, the pose carrying the emotion, and the one prop in the accent colour. If the user wants a real photo, add a short photo brief (subject, moment, framing with empty space for text, light, aspect ratio, no text or logos) they can generate or shoot, and offer to drop their photo into the layout in black and white. When the `ad-blueprint` skill is installed, its `references/render-mockup.md` has full templates, figure-construction rules, and the compositing template.
 
-Show the mockup inline where the surface allows; otherwise save it as `ad-<slug>-<placement>.svg` and give the path.
+Provide an image preview if possible, or a file link **only when the file really exists and was verified**. If an SVG/image cannot be created, supply the exact visual plan and mark **not rendered**. A text-only layout does not satisfy a requested person-led image.
 
 ## Step 6 — Test with three questions
 
@@ -77,7 +79,7 @@ Give the user these to ask someone cold (and answer them yourself, honestly, fir
 2. "Would you screenshot this?"
 3. "Would you send it to a friend?"
 
-Yes → ship it. No → cut five words, try a new format, or punch harder.
+Yes → candidate for real audience testing. No → cut words, try a more appropriate format, or rethink the insight. Answering these questions internally is not evidence of actual viewer response.
 
 ## Output
 
