@@ -19,10 +19,10 @@ def load_svg(name):
 class OpenAIPluginFixtureTests(unittest.TestCase):
     def test_manifest_and_openai_only(self):
         m = json.loads((ROOT / "plugin.json").read_text(encoding="utf-8"))
-        self.assertEqual(m["version"], "0.3.0")
+        self.assertEqual(m["version"], "0.3.1")
         self.assertEqual(m["name"], "mastermind-ad-engine")
         self.assertIn("com.openai", m["extensions"])
-        self.assertNotIn("screenshots", m["extensions"]["com.openai"]["interface"])
+        self.assertNotIn("screenshots", m["extensions"]["com.openai"]["interface"])\n        self.assertLessEqual(len(m["extensions"]["com.openai"]["interface"]["defaultPrompt"]), 3)
         self.assertFalse((ROOT / ".claude-plugin").exists())
         self.assertFalse((ROOT / "mcp.json").exists())
 
