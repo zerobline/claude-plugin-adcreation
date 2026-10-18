@@ -60,7 +60,7 @@ State the emotional truth the ad is built on in one sentence. If it is built on 
 | Recognition | Would the tribe say "that's literally me"? | Adjust voice or visual for resonance. |
 | Visual Power | Would I stop on the look alone? | Increase contrast. Strip filler. |
 
-**Verdict:** 20–25 **Publish** · 16–19 **Tweak** (name the one word, one visual, one tone) · below 16 **Rebuild** from the Spike Core.
+**Subjective verdict:** 20–25 **Audience-test candidate** · 16–19 **Revise** (name the one word, one visual, one tone) · below 16 **Rebuild** from the Spike Core.
 
 Bonus filter: would someone share it with one word — "Mood"?
 
