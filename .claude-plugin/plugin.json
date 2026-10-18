@@ -1,0 +1,23 @@
+{
+  "name": "mastermind-ad-engine",
+  "displayName": "Mastermind Ad Engine",
+  "version": "0.1.0",
+  "description": "Create static ads people actually feel: billboards, posters, print, and social statics. A 7-step method (emotional truth, category flip, punchline, visual twist, micro-tribe, platform fit, taste test) with scoring tools, a 15-minute quickstart, a cold creative-director critique, A/B variants, launch checklist, and rendered SVG mockups.",
+  "author": {
+    "name": "zerobline",
+    "url": "https://github.com/zerobline"
+  },
+  "homepage": "https://github.com/zerobline/claude-plugin-adcreation",
+  "repository": "https://github.com/zerobline/claude-plugin-adcreation",
+  "license": "MIT",
+  "keywords": [
+    "advertising",
+    "copywriting",
+    "billboard",
+    "out-of-home",
+    "poster",
+    "creative-direction",
+    "social-media",
+    "marketing"
+  ]
+}

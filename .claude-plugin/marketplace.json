@@ -1,0 +1,26 @@
+{
+  "name": "zerobline-adcreation",
+  "owner": {
+    "name": "zerobline",
+    "url": "https://github.com/zerobline"
+  },
+  "metadata": {
+    "description": "Mastermind Ad Engine: a method for building static ads that hit in three seconds."
+  },
+  "plugins": [
+    {
+      "name": "mastermind-ad-engine",
+      "source": "./",
+      "description": "Create static ads people actually feel: billboards, posters, print, and social statics, built with the Mastermind 7-step method and rendered as SVG mockups.",
+      "version": "0.1.0",
+      "author": {
+        "name": "zerobline",
+        "url": "https://github.com/zerobline"
+      },
+      "homepage": "https://github.com/zerobline/claude-plugin-adcreation",
+      "license": "MIT",
+      "keywords": ["advertising", "copywriting", "billboard", "poster", "marketing"],
+      "category": "marketing"
+    }
+  ]
+}
