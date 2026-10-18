@@ -1,6 +1,6 @@
 ---
 name: ad-blueprint
-description: Builds a static ad end to end — billboard, out-of-home poster, transit or street poster, print ad, social static post, or email header — with the Mastermind 7-step method (emotional truth, category flip, punchline, visual twist, micro-tribe, platform fit, taste test) and renders a mockup. Use when someone wants to "create an ad", "make a billboard", "design a poster ad", "come up with an ad concept", "write ad copy that hits", "make a scroll-stopping post", or says their ads feel flat and wants one people actually feel.
+description: Builds a static ad end to end — billboard, out-of-home poster, transit or street poster, print ad, social static post, or email header — with the Mastermind 7-step method (emotional truth, category flip, punchline, visual twist, micro-tribe, platform fit, taste test) and delivers a mockup when OpenAI artifact tools are available. Use when someone wants to "create an ad", "make a billboard", "design a poster ad", "come up with an ad concept", "write ad copy that hits", "make a scroll-stopping post", or says their ads feel flat and wants one people actually feel.
 ---
 
 # Ad Blueprint — the Mastermind 7-step method
@@ -16,7 +16,7 @@ Clarify → Flip → Write → Design → Tribe → Platform → Taste Test
 
 ## OpenAI execution rules (required)
 
-- **OpenAI-only skill.** No Claude feature, MCP service or automated reviewer is bundled. Use only the image, artifact, computation and file tools actually present in the current ChatGPT/Codex environment.
+- **OpenAI-only skill.** No MCP service or automated reviewer is bundled. Use only the image, artifact, computation and file tools actually present in the current ChatGPT/Codex environment.
 - **Evidence ledger:** before creative work, separate product facts supplied by the user, independently substantiated facts (with sources), emotional audience hypotheses and unsupported performance/guarantee claims. Remove unsupported objective claims. Refer to `references/product-truth-and-symbol.md`.
 - **Visual execution:** use an available image or code/artifact tool for a genuine picture or editable SVG; file claims require successful file creation and verification. Inspect a real preview if feasible. If no image/artifact capability exists, provide a dimensioned, production-usable visual brief and explicitly say **not rendered**. Never fabricate a file link/path. Preserve user-mandated people as person-led visuals rather than switching to type-only.
 - **Review provenance:** an internal self-critique in the same context is NOT an independent blind review. Only report blind/fresh-context review if one genuinely occurred. Subjective 5D scores do not measure effectiveness or support 'Publish' by themselves.
@@ -97,7 +97,7 @@ Forget demographics. Build for a status identity under stress — one specific p
 
 1. Fill the **Identity Grid**: "I am… / But I feel… / And I wish…".
 2. Pair the tribe with a **Shadow Matchmaker** archetype (Prover, Hacker, Escapist, Nurturer, Guardian) to flavour tone and visuals.
-3. Score with the **Recognition Filter** (4 dimensions, 0–5 each). 16–20 = publish-ready tribe; below 16, rework the "But I feel…" line.
+3. Score with the **Recognition Filter** (4 dimensions, 0–5 each). 16–20 = sharply defined creative audience; below 16, rework the "But I feel…" line.
 4. If the sharper tribe no longer matches the punchline, loop back to Step 3 before moving on.
 
 Details: `references/step-5-micro-tribe.md`.
