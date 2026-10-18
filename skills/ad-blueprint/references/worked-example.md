@@ -63,7 +63,7 @@ Glance Test: get it at a glance ✅ · image extends the line (the split *is* th
 - **But I feel** one slow month away from going back to a job…
 - **And I wish** I could see the money coming, so I could stop checking.
 
-Archetype: **The Prover** (fear of being exposed). Recognition Filter: specificity 5, tension 5, relatability 4, non-job-dependent 4 = **18/20** → publish-ready. The punchline still mirrors this person; no loop back needed.
+Archetype: **The Prover** (fear of being exposed). Recognition Filter: specificity 5, tension 5, relatability 4, non-job-dependent 4 = **18/20** → sharply specified audience hypothesis. The punchline still mirrors this person; no loop back needed.
 
 ## Step 6 — Platform
 
