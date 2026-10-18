@@ -1,12 +1,20 @@
 # Rendering the static mockup
 
-A mockup makes the taste test honest: lines that read well in a paragraph often fall apart on a canvas. Render every finished ad, then judge the render, not the idea.
+A mockup exposes visual defects that text cannot reveal. Render final artwork **after Step 6** has locked the audience and placement, then inspect the actual artifact. This is concept QA, not evidence of advertising success.
+
+## OpenAI capability and verification gate
+
+- For an editable vector artifact, use an available OpenAI file/code capability to write SVG; a generated raster is not equivalent to editable SVG. When a user wants imagery and image generation is available, use it for imagery. Never pretend a tool is present.
+- If creating a file, actually write it, verify the returned path, parse the SVG/HTML and inspect a reduced preview if tools support it. Do not invent file links.
+- If no artifact creation/inspection tool exists, return a complete layout plan with dimensions and direction, clearly labelled **not rendered**. This gracefully degrades but does *not* pass a visual-output acceptance test.
+- If the ad demands a person, provide actual person-shaped visual work when possible or a specific human-led photo brief, not a typography-only workaround.
+- Brand identity, legibility, rights, legal disclosures and platform constraints override optional palette/style rules.
 
 ## Output
 
 - Default to a **self-contained SVG** (scales cleanly, prints, opens anywhere). Use a single self-contained HTML page instead when the format needs layered UI (Screenshot Confession, Receipt Stack) that is easier to build with HTML/CSS.
 - Name files `ad-<slug>-<placement>.svg` (for example `ad-fully-booked-billboard-48sheet.svg`). One file per variant when rendering the 2×2.
-- No external assets, web fonts, scripts, or remote images. Use the font stack `Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif`.
+- No external assets, web fonts, scripts, or remote images unless supplied and appropriately licensed by the user. Use the font stack `Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif`.
 - If the environment can display images inline, show the mockup there as well as saving the file. Otherwise save it and give the path.
 
 ## Canvas sizes
@@ -39,7 +47,7 @@ Set the SVG `viewBox` to the placement's proportions. Common sizes (always confi
 
 ## People and imagery
 
-When Step 4 says the sting lives in a body, the ad needs a person. Don't fall back to type-only because type is easier. The model draws vectors directly; it does not create photographs in this workflow. So there are two ways to put a person in the ad, and both work with no outside service:
+When Step 4 says the sting lives in a body, the ad needs a person. Don't fall back to type-only because type is easier. The model draws vectors directly; it does not create photographs in this workflow. So there are two ways to put a person in the ad, and both can be prepared without external services when the environment supports SVG authoring:
 
 | Route | What the model does | Best for |
 |---|---|---|
