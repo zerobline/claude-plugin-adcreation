@@ -1,8 +1,8 @@
 {
   "name": "mastermind-ad-engine",
   "displayName": "Mastermind Ad Engine",
-  "version": "0.1.0",
-  "description": "Create static ads people actually feel: billboards, posters, print, and social statics. A 7-step method (emotional truth, category flip, punchline, visual twist, micro-tribe, platform fit, taste test) with scoring tools, a 15-minute quickstart, a cold creative-director critique, A/B variants, launch checklist, and rendered SVG mockups.",
+  "version": "0.2.0",
+  "description": "Create static ads people actually feel: billboards, posters, print, and social statics. A 7-step method (emotional truth, category flip, punchline, visual twist, micro-tribe, platform fit, taste test) with scoring tools, a 15-minute quickstart, a cold creative-director critique, A/B variants, a launch checklist, and rendered SVG mockups, including ads with people drawn as bold vector figures.",
   "author": {
     "name": "zerobline",
     "url": "https://github.com/zerobline"
@@ -19,5 +19,6 @@
     "creative-direction",
     "social-media",
     "marketing"
-  ]
+  ],
+  "icon": "./assets/icon.png"
 }

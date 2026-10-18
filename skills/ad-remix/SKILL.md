@@ -23,7 +23,7 @@ Start from the current ad. If there's no Spike Core on record, state the emotion
 | **Copy B** | Punchline B + Format A | Punchline B + Format B |
 
 4. Render all four as mockups (SVG at the placement's proportions; see the `ad-blueprint` skill's `references/render-mockup.md` when available). Name them `ad-<slug>-AA.svg`, `-AB`, `-BA`, `-BB`.
-5. Score each on the 5D grid (Clarity, Surprise, Emotion, Recognition, Visual Power, 1–5 each). Ask: which **stings faster**, which is **most shareable**, which would trigger **DMs, not just likes**? Recommend the one or two with the fastest hit and cleanest silhouette.
+5. Score each on the 5D grid (Clarity, Surprise, Emotion, Recognition, Visual Power, 1–5 each). For an unbiased ranking, run the `ad-critique` skill's cold review mode on all four without saying which one you prefer. Ask: which **stings faster**, which is **most shareable**, which would trigger **DMs, not just likes**? Recommend the one or two with the fastest hit and cleanest silhouette.
 
 ## Mode 2 — Launch Checklist (the Screenshot Protocol)
 

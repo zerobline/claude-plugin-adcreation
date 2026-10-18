@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mastermind-ad-engine",
+  "version": "0.2.0",
+  "description": "Create static ads people actually feel: billboards, posters, print, and social statics. A 7-step method (emotional truth, category flip, punchline, visual twist, micro-tribe, platform fit, taste test) with scoring tools, a 15-minute quickstart, a cold creative-director critique, A/B variants, a launch checklist, and rendered SVG mockups, including ads with people drawn as bold vector figures.",
+  "author": {
+    "name": "zerobline",
+    "url": "https://github.com/zerobline"
+  },
+  "homepage": "https://github.com/zerobline/claude-plugin-adcreation",
+  "repository": "https://github.com/zerobline/claude-plugin-adcreation",
+  "license": "MIT",
+  "keywords": [
+    "advertising",
+    "copywriting",
+    "billboard",
+    "out-of-home",
+    "poster",
+    "creative-direction",
+    "social-media",
+    "marketing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Mastermind Ad Engine",
+        "shortDescription": "Static ads people feel",
+        "longDescription": "Mastermind Ad Engine turns the model into a creative director for static ads: billboards, street and transit posters, print, social statics, and email headers.\n\nWhat it does:\n- Builds an ad end to end with a 7-step method: find the emotional truth your audience hides, flip the category's default belief, write a punchline that lands in three seconds, choose a visual format that delivers the feeling, sharpen the micro-tribe, adapt to the placement, and score the result.\n- Renders every ad as a self-contained SVG mockup at the right proportions (billboards, posters, Instagram, LinkedIn, stories, email).\n- Puts people in ads when the truth lives in a body: draws them as bold, pictogram-style vector figures, or writes a photo brief and composites your own photo into the layout in black and white.\n- Critiques existing ads with a scorecard and concrete rewrites, including a blind cold review that ranks variants.\n- Generates 2x2 A/B variants, runs a pre-launch checklist, remixes ads that flopped, and scales one idea into 5 to 20 ads.\n\nWho it's for: founders, marketers, product managers, designers, and small businesses who need ads that make people stop, without an agency.\n\nLimitations: it does not generate photographs or connect to any service; it draws vector figures and writes photo briefs. Mockups are for judging ideas, not print-ready artwork; final files still need to be produced to the media owner's or printer's specification. No data leaves the conversation.",
+        "developerName": "zerobline",
+        "category": "Design",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://github.com/zerobline/claude-plugin-adcreation",
+        "defaultPrompt": [
+          "Make a billboard for my café that opens at 5:30 a.m. for night-shift workers.",
+          "Rate this ad and tell me exactly what to fix.",
+          "Give me four A/B variants of this Instagram ad."
+        ],
+        "brandColor": "#E0282E",
+        "brandColorDark": "#FF4D4F",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "screenshots": [
+          "./assets/example-figure-billboard.png",
+          "./assets/example-billboard.png",
+          "./assets/example-instagram.png"
+        ]
+      }
+    }
+  }
+}

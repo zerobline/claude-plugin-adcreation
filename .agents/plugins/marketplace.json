@@ -1,0 +1,20 @@
+{
+  "name": "zerobline-adcreation",
+  "interface": {
+    "displayName": "Mastermind Ad Engine"
+  },
+  "plugins": [
+    {
+      "name": "mastermind-ad-engine",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}

@@ -42,10 +42,13 @@ Write two or three versions. Read them aloud. The winner hits in 3 seconds and m
 | Pretend vs. panic | Mirror Split | Exposes the contradiction visually |
 | Chaos or stress | Receipt Stack | Clutter becomes the metaphor |
 | Irony or sarcasm | Meme Flip | Scroll-stopper with bite |
+| Exhaustion, longing, relief | Human Moment | One person's pose says it before the words do |
 
-Drop the line into that format. Done is better than beautiful. For billboards, prefer Bold Poster or Mirror Split — the others are too dense to read at distance.
+Quick gut check: if the sting lives in a person's body (slumped shoulders, eyes closed over a coffee), use the Human Moment and show a person — don't default to type-only.
 
-Constraints: black/white + one accent colour, one font, one focal point, no stock faces, no gradients. Screenshot and meme formats use invented conversations and original or licensed imagery — never real people, real brand UIs, or famous meme photos.
+Drop the line into that format. Done is better than beautiful. For billboards, prefer Bold Poster, Mirror Split, or a big Human Moment figure — the others are too dense to read at distance.
+
+Constraints: black/white + one accent colour, one font, one focal point, no gradients, and no stock faces (a specific person in a telling moment is fine — a posed, smiling model is not). Screenshot and meme formats use invented conversations and original or licensed imagery — never real people, real brand UIs, or famous meme photos.
 
 ## Step 4 — Add a native caption (optional)
 
@@ -60,7 +63,9 @@ Pick the tone that fits the tribe. Don't explain — echo their thoughts. Billbo
 
 ## Step 5 — Render it
 
-Render a self-contained SVG mockup at the placement's proportions (Instagram 1080×1350, story 1080×1920, LinkedIn 1200×627, 48-sheet billboard 2400×1200, US bulletin 2400×700, portrait poster 1414×2000). Use `Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif`, weight 900 for the line, typographic apostrophes, and the accent on the one word that stings. When the `ad-blueprint` skill is installed, its `references/render-mockup.md` has full templates and sizes.
+Render a self-contained SVG mockup at the placement's proportions (Instagram 1080×1350, story 1080×1920, LinkedIn 1200×627, 48-sheet billboard 2400×1200, US bulletin 2400×700, portrait poster 1414×2000). Use `Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif`, weight 900 for the line, typographic apostrophes, and the accent on the one word that stings.
+
+For a Human Moment, draw the person directly as a bold vector figure: a few big shapes (head, neck, torso cropped by the bottom edge, thick round-capped limbs), profile or three-quarter back, a minimal or no face, the pose carrying the emotion, and the one prop in the accent colour. If the user wants a real photo, add a short photo brief (subject, moment, framing with empty space for text, light, aspect ratio, no text or logos) they can generate or shoot, and offer to drop their photo into the layout in black and white. When the `ad-blueprint` skill is installed, its `references/render-mockup.md` has full templates, figure-construction rules, and the compositing template.
 
 Show the mockup inline where the surface allows; otherwise save it as `ad-<slug>-<placement>.svg` and give the path.
 

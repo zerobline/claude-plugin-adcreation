@@ -68,11 +68,12 @@ For roadside billboards the line gets **7 words or fewer**. Details: `references
 
 The punchline is the weapon; the visual is the trigger. Translate emotion into structure, not decoration.
 
-1. **Style Mapper**: match the emotion to a format (shame → Mirror Split, sarcasm → Screenshot/Meme, overwhelm → Receipt Stack, identity shift → Bold Poster, emotional journey → Cinematic Photo + Text).
-2. Build from the **Visual Format Vault**: Bold Poster, Screenshot Confession, Mirror Split, Receipt Stack, Meme Flip.
-3. Apply the **Chokehold Constraints**: black/white + one bold accent; one focal point; metaphor or screenshot, never stock faces; one clean font, no gradients.
-4. Run the **Scroll-Test** (or the Glance Test for out-of-home): 3+ of 4 = ship; missing more than 2 = strip, simplify, sharpen.
-5. **Render a mockup** following `references/render-mockup.md`.
+1. **Words or a body?** Decide where the sting lives: in the words (type-led), in a person's pose (people-led), or in a thing (object metaphor). If a person would make it land harder, show a person — don't default to type because it's easier to render.
+2. **Style Mapper**: match the emotion to a format (shame → Mirror Split, sarcasm → Screenshot/Meme, overwhelm → Receipt Stack, identity shift → Bold Poster, exhaustion/longing/relief → Human Moment).
+3. Build from the **Visual Format Vault**: Bold Poster, Screenshot Confession, Mirror Split, Receipt Stack, Meme Flip, Human Moment.
+4. Apply the **Chokehold Constraints**: black/white + one bold accent; one focal point; metaphor, screenshot, or one specific person in a telling moment — never stock faces; one clean font, no gradients.
+5. Run the **Scroll-Test** (or the Glance Test for out-of-home): 3+ of 4 = ship; missing more than 2 = strip, simplify, sharpen.
+6. **Render a mockup** following `references/render-mockup.md`. For people, draw a bold vector figure (always possible), and when photographic realism would help, also hand over a photo brief and composite the user's photo into the layout when they send it.
 
 Details: `references/step-4-visual-twist.md`.
 
@@ -103,7 +104,7 @@ Details, including billboard, poster, and print placements: `references/step-6-p
 Most "pretty good" ads settle before they sting. Score, collide variants, and get cold eyes.
 
 1. Score the ad on the **5D Taste Calibration Grid** — Clarity, Surprise, Emotion, Recognition, Visual Power (1–5 each). **20–25** publish; **16–19** tweak one visual, one word, one tone; **below 16** rebuild from the Spike Core.
-2. Get a **cold critique**. When the `cold-creative-director` agent is available, give it only the finished ad (line, mockup path or description, placement) and a one-sentence audience — never the reasoning behind it. Otherwise switch into the stance of the `ad-critique` skill and judge the ad as if seeing it for the first time.
+2. Get a **cold critique** with the `ad-critique` skill's cold review mode. When the environment can start a fresh-context subagent, give it only the finished ad (line, mockup path or description, placement) and a one-sentence audience — never the reasoning behind it. Otherwise set the reasoning aside and run the cold review yourself, judging the ad as if seeing it for the first time.
 3. Build the **A/B War Room 2×2**: Punchline A/B × Visual A/B. Keep the one or two with the fastest hit and cleanest silhouette.
 4. Hand the user the **Reality Loop**: peer provocation questions and a micro-audience test. Track saves, DMs, replies, and shares — not likes.
 
@@ -125,6 +126,7 @@ Self-scores inflate; inflated scores ship weak ads.
 - No fake proof: no invented testimonials, reviews, statistics, or claims the product can't back up.
 - Screenshot and meme formats: write an invented conversation; never impersonate real people, brands, or accounts. Use original or licensed images — popular meme templates and stock photos are often copyrighted.
 - "Could this be a Nike or Apple ad?" is a quality bar for confidence and cleanliness, never a cue to borrow anyone's marks, slogans, or look.
+- People in ads are fictional and drawn with respect: characterise through pose, clothing, and props, never caricatured features. Never depict a real, identifiable person without consent, and never present a generated person as a real customer.
 
 ## Deliverable: the Ad Build Sheet
 
@@ -139,6 +141,7 @@ Finish with a build sheet plus the mockup file. Keep it scannable:
   Alternates: "…" · "…"
 **Micro-tribe:** I am … / But I feel … / And I wish …  · Archetype: …  · Recognition x/20
 **Visual:** [format] · palette [black/white + accent] · focal point: … · Scroll/Glance test x/4
+**Image:** [type only | vector figure: who, pose, prop | photo brief: moment, framing, light — full brief below the sheet]
 **Placement:** [platform, size] · caption/sign-off: … · CTA: …
 **5D Taste score:** Clarity x · Surprise x · Emotion x · Recognition x · Visual x = xx/25 → [Publish | Tweak | Rebuild]
 **2×2 variants:** A/A … · A/B … · B/A … · B/B …
@@ -158,5 +161,5 @@ Close with one sentence on the single biggest risk in the ad (the place a cold r
 - `references/step-6-platform.md` — platform grids, captions, and out-of-home/print rules
 - `references/step-7-taste-test.md` — 5D grid, A/B War Room, Reality Loop
 - `references/spike-vault.md` — scored example lines by audience for calibration and remixing
-- `references/render-mockup.md` — sizes and rules for rendering the static mockup (SVG/HTML)
+- `references/render-mockup.md` — sizes and rules for rendering the static mockup (SVG/HTML), drawing people as vector figures, photo briefs, and photo compositing
 - `references/worked-example.md` — one complete run from intake to billboard mockup

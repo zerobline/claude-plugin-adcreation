@@ -20,9 +20,20 @@ Don't decorate the punchline. **Deliver it.** A powerful ad is felt in the first
 | Sarcasm / rebellion | Screenshot / meme | iMessage- or post-style frame |
 | Overwhelm | Browser tabs / Receipt Stack | Chaotic UI with one clear line |
 | Identity shift | Bold Poster | Black/white field, massive type |
-| Emotional journey | Cinematic photo + text layer | Hero image + a soft, shocking truth |
+| Exhaustion, longing, relief, belonging | The Human Moment (vector figure or photo) | One person, one telling pose, one prop in the accent colour |
+| Emotional journey | The Human Moment (photo) + text layer | A candid moment + a soft, shocking truth |
 
 Ask: "Could they *feel the point* even if they muted it or skipped the caption?"
+
+### Words or a body?
+
+Before picking a format, ask where the sting lives:
+
+- **In the words** ("Fully booked. Still terrified.") → type-led: Bold Poster, Mirror Split, Screenshot Confession.
+- **In a body** (slumped shoulders at 5:30 a.m., a hand hovering over "send", a back turned to a crowded room) → people-led: the Human Moment. The pose says the truth; the line only names it.
+- **In a thing** (a cold coffee, forty open tabs, a cracked screen) → object metaphor or Receipt Stack.
+
+When people would make the ad land harder, show people. Don't default to type just because type is easier to render.
 
 ## 4.2 The Chokehold Constraints — clarity through constraint
 
@@ -30,7 +41,7 @@ Creativity loves boundaries. Limit the choices; increase the punch.
 
 1. **Colour rule** — black/white + one bold accent (red, neon green, electric blue). Forces visual focus. If the brand has a colour, the brand colour becomes the accent.
 2. **Layout rule** — one focal point only (the punchline, an object, or a shape). No distractions.
-3. **Image rule** — metaphor or screenshot, not stock faces. A broken screen beats a sad model.
+3. **Image rule** — metaphor, screenshot, or one *specific* person in a telling moment — never stock faces (posed, smiling, generic, looking at the camera). A broken screen beats a sad model; a nurse's slumped shoulders over a coffee at 5:30 a.m. beats both.
 4. **Type rule** — one clean font, no gradients.
 
 ## 4.3 The Scroll-Test — the 1.5-second filter
@@ -91,11 +102,16 @@ Great ads don't explain themselves; they hit before the words are read.
 - **Use to** grab attention and twist a familiar image into emotional clarity.
 - Famous meme photos are usually copyrighted. Recreate the *structure* with original or licensed imagery, or simple illustrated shapes.
 
-### Format 6 — Cinematic Photo + Text Layer
+### Format 6 — The Human Moment
 
-- **Emotion:** emotional journey, quiet longing.
-- **Style:** one evocative photo (an object or scene, not a posed stock face) + a short soft truth.
-- **Use when** the brand owns real photography. Brief the image as a metaphor ("an untouched coffee going cold next to a laptop at 11 p.m."), not as "person looking stressed".
+- **Emotion:** exhaustion, longing, relief, belonging, quiet pride — any truth that lives in a body.
+- **Style:** one person, one telling pose, one prop. The figure is big and cropped (often bleeding off the bottom edge); the line sits in the empty space beside it.
+- **Two renderings:**
+  - **Vector figure** — a bold, pictogram-style person drawn directly in the SVG: big geometric shapes, a silhouette that reads at distance, the prop in the accent colour. Always available; strongest on billboards and posters. Construction rules in `render-mockup.md`.
+  - **Photo** — a candid, documentary-style photo of one person. Write an image brief (template in `render-mockup.md`) the user can generate in any image tool or shoot; build the layout around a sized placeholder; composite the photo, converted to black and white, when the user provides it.
+- **Example:** a night-shift nurse in profile, eyes closed, holding a steaming cup (accent) → "Your night ends here." · "[Café name] · Open 05:30".
+- **Use when** the answer to "words or a body?" is *body*. Brief the person as a moment and a tell ("hands wrapped around a cup, still in scrubs, eyes closed"), never as "person looking stressed".
+- People are specific, respectfully drawn, and fictional: characterise through pose, clothing, and props, not caricatured features. Never depict a real, identifiable person without their consent.
 
 ## Design constraint recap
 

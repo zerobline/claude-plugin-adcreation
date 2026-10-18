@@ -1,6 +1,6 @@
 ---
 name: ad-critique
-description: Critiques and scores an existing ad, billboard, poster, social static, or ad line like a cold-blooded creative director, using the Mastermind taste tools (first-glance read, Spike Meter, Scroll-Test or Glance Test, Recognition Filter, 5D Taste Calibration Grid), and names exactly what to cut, sharpen, or rebuild. Use when someone shares an ad image, mockup, or copy and asks "is this good", "rate my ad", "score this billboard", "roast/tear apart this ad", "will this work", or "why isn't this ad performing".
+description: Critiques and scores an existing ad, billboard, poster, social static, or ad line like a cold-blooded creative director, using the Mastermind taste tools (first-glance read, Spike Meter, Scroll-Test or Glance Test, Recognition Filter, 5D Taste Calibration Grid), and names exactly what to cut, sharpen, or rebuild. Also runs the blind "cold review" of a finished ad or a set of variants. Use when someone shares an ad image, mockup, or copy and asks "is this good", "rate my ad", "score this billboard", "roast/tear apart this ad", "which variant should I run", "will this work", or "why isn't this ad performing".
 ---
 
 # Ad Critique — the cold-blooded creative director
@@ -68,7 +68,8 @@ List each violation found:
 
 - More than black/white + one accent colour.
 - More than one focal point competing.
-- Stock faces instead of metaphor or screenshot.
+- Generic stock faces (posed, smiling, looking at the camera) instead of metaphor, screenshot, or one specific person in a telling moment.
+- The opposite miss: a type-only ad whose truth lives in a body, where showing one person would land harder.
 - More than one font, or gradients.
 - Out-of-home only: main line over 7 words (roadside), QR code on a roadside billboard, a sign-off that competes with the line, text unreadable at thumbnail size.
 - Risks: invented testimonials or stats, real people or brand UIs imitated in a screenshot, copyrighted meme or stock imagery, a line that mocks rather than mirrors.
@@ -78,7 +79,7 @@ List each violation found:
 Make every fix concrete:
 
 - **Three rewritten lines** using the punchline templates ("Not [thing]. [Truth]." / "You're not [X]. You're just [truth]." / "Still [problem]? Try [new mindset].") — each grounded in the Spike Core found or proposed in step 2.
-- **A format swap** if the visual fights the emotion (shame → Mirror Split, overwhelm → Receipt Stack, identity shift → Bold Poster, sarcasm → Screenshot or Meme Flip).
+- **A format swap** if the visual fights the emotion (shame → Mirror Split, overwhelm → Receipt Stack, identity shift → Bold Poster, sarcasm → Screenshot or Meme Flip, exhaustion/longing/relief → Human Moment with one specific person).
 - **The single highest-leverage change**, stated first.
 
 When the verdict is Rebuild and the `ad-blueprint` skill is available, offer to run it from Step 1.
@@ -113,3 +114,24 @@ Peer questions: "Would you share this or scroll past it?" · "What's the first e
 ```
 
 The peer questions come from the Reality Loop: the user should still put the ad in front of real people from the tribe and track saves, DMs, replies, and shares — not likes.
+
+## Cold review mode — fresh eyes on a finished ad
+
+Use this mode when another skill (the `ad-blueprint` Step 7, or `ad-remix` variants) hands over a finished ad for the method's "test it on someone cold" check, or when the user asks which of several variants to run. Self-scoring inflates; the cold review exists to stop that.
+
+- **Judge only what's handed over:** the line, the mockup (open it and look before anything else), the placement, and a one-sentence audience. Ignore any Spike Core, build reasoning, or earlier scores, even if they're visible in the conversation, and don't ask for the creator's intentions.
+- **When the environment can start a fresh-context subagent,** the calling skill should run this mode there, passing only those four inputs. That's the closest thing to a stranger's first glance.
+- **Stance:** a savage creative director seeing the ad for the first time. Honest, not polite; critique the work, never the people who made it. One question matters: does it make the intended audience feel recognised in under three seconds?
+- **Steps:** first glance (what it says, what it makes you feel, where the eye lands) → the truth it seems built on → the 5D grid with one blunt sentence per score → verdict → kill list of constraint violations → the one fix that matters most → up to three rewritten lines.
+- **Several variants:** score each, then rank them by which stings fastest and which is most shareable, without being told which one the author prefers.
+
+Compact output, under 250 words per ad, no pleasantries, no praise you don't mean:
+
+```
+FIRST GLANCE: says … / feels … / eye lands on …
+TRUTH IT'S BUILT ON: …
+5D: Clarity x · Surprise x · Emotion x · Recognition x · Visual x = xx/25 → VERDICT
+WHAT'S KILLING IT: …
+FIX FIRST: …
+REWRITES: "…" · "…" · "…"
+```

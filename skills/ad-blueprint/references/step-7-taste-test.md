@@ -64,7 +64,7 @@ Get cold eyes. Not compliments.
 
 > "Act like a savage creative director. Tear this ad apart. Be honest, not polite. Rate clarity, emotional punch, visual power."
 
-In this plugin, that's the `cold-creative-director` agent or the `ad-critique` skill.
+In this plugin, that's the `ad-critique` skill's cold review mode — run in a fresh-context subagent when the environment supports one.
 
 **3. Micro-audience live test.** Post two or three variants in an Instagram Story poll, a WhatsApp or Discord group, or a Slack channel. Ask "Which one hits hardest?" Track **DMs, saves, and shares** — not likes.
 
