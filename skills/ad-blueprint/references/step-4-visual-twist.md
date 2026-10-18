@@ -44,7 +44,11 @@ Creativity loves boundaries. Limit the choices; increase the punch.
 3. **Image rule** — metaphor, screenshot, or one *specific* person in a telling moment — never stock faces (posed, smiling, generic, looking at the camera). A broken screen beats a sad model; a nurse's slumped shoulders over a coffee at 5:30 a.m. beats both.
 4. **Type rule** — one clean font, no gradients.
 
-## 4.3 The Scroll-Test — the 1.5-second filter
+## 4.3 Symbol Lock (before rendering)
+
+Name **one recurring symbol** (object, person gesture, strong split or metaphor). Explain its real product relationship, what a cold passer-by would read, the risk of category confusion, and why it isn't merely a competitor's recognisable symbol. Check it works at street distance and in mobile formats. This is a creative distinctiveness check, not legal trademark clearance. The final visual is rendered **after Step 6** fixes audience, placement and design constraints; Step 4 produces the composition plan.
+
+## 4.4 The Scroll-Test — the 1.5-second filter
 
 | Question | Pass if |
 |---|---|
