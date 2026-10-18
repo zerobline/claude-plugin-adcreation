@@ -1,6 +1,6 @@
 # Worked example — from intake to billboard
 
-A complete autopilot run, to calibrate depth, scoring honesty, and output shape. The brand is fictional.
+An *illustrative, not empirically validated* autopilot example. Scores are subjective teaching aids; this is not a measured user test. The brand is fictional.
 
 ## Intake
 
@@ -49,13 +49,13 @@ Weapon: **Shame Mirror** (public behaviour vs. private feeling).
 
 **Punchline A:** "Fully booked. Still terrified." **Punchline B:** "You're not broke. You're just guessing."
 
-## Step 4 — Visual twist
+## Step 4 — Visual concept and symbol lock
 
 Shame → **Mirror Split**: left (white) "SAYS — Fully booked." · right (black) "FEELS — Still terrified." Accent red on "terrified." only. Brand sign-off small, bottom right: "Steadybook. Know next month."
 
 Glance Test: get it at a glance ✅ · image extends the line (the split *is* the contradiction) ✅ · premium and clean ✅ · repeatable later ✅ → **4/4**.
 
-Mockup: the Mirror Split template in `render-mockup.md` is this ad.
+**Symbol Lock:** split between public success and private worry; category-confusion risk: fully booked could imply a hotel. Final mockup: generated after Step 6 using the Mirror Split template in `render-mockup.md`.
 
 ## Step 5 — Micro-tribe
 
@@ -75,7 +75,7 @@ Archetype: **The Prover** (fear of being exposed). Recognition Filter: specifici
 
 | Clarity | Surprise | Emotion | Recognition | Visual | Total |
 |---|---|---|---|---|---|
-| 5 | 4 | 5 | 5 | 4 | **23/25 → Publish** |
+| 5 | 4 | 5 | 5 | 4 | **23/25 → Audience-test candidate (subjective)** |
 
 Surprise is a 4, not a 5: Mirror Splits are a known device; the line, not the layout, carries the surprise.
 
