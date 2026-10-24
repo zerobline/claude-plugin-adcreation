@@ -2,7 +2,7 @@
 
 **Static advertising built around a recognisable emotional truth, a defensible product promise, and a visual that works in the actual placement.**
 
-Version **0.3.1** is an **OpenAI-only skills plugin** for ChatGPT and Codex. No Claude-specific manifest, MCP server, authentication, external account or background service is needed.
+Version **0.3.2** is an **OpenAI-only skills plugin** for ChatGPT and Codex. No Claude-specific manifest, MCP server, authentication, external account or background service is needed.
 
 ## Workflow
 
@@ -28,7 +28,9 @@ codex plugin marketplace add zerobline/claude-plugin-adcreation
 codex plugin add mastermind-ad-engine@zerobline-adcreation
 ```
 
-For the public ChatGPT Plugin Directory, package the repository as a ZIP and submit a **Skills only** draft at https://platform.openai.com/plugins . A GitHub repository by itself is not a public listing. Current OpenAI packaging: https://developers.openai.com/plugins/build/plugins .
+**Public listing status (24 October 2026):** The OpenAI submission portal currently reports **"We are not accepting more skills-only submissions at this time."** Therefore the existing skills-only plugin cannot currently be submitted for public listing through that route. This restriction is separate from packaging or metadata and is not bypassed by declaring a fictional MCP server. See [Publishing status](docs/PUBLISHING.md) for details and a legitimate MCP-based alternative.
+
+Current package format documentation: https://developers.openai.com/plugins/build/plugins .
 
 ## Five acceptance cases
 
@@ -39,6 +41,15 @@ See [tests/ACCEPTANCE.md](tests/ACCEPTANCE.md) for full input fixtures, pass/fai
 3. Critique this existing ad without knowing why it was designed. (Attach the actual ad.)
 4. Give me four Instagram A/B concepts based on the same emotional truth.
 5. Adapt an Instagram ad into a motorway billboard. (Provide the source ad.)
+
+## Publisher and policy information
+
+The manifest uses the supported OpenAI category **Creativity**. The public support, privacy and terms documents are published on GitHub. Please review these publisher-specific legal/privacy drafts for accuracy before submitting any future listing:
+
+- [Support](SUPPORT.md)
+- [Privacy Policy](PRIVACY.md)
+- [Terms of Service](TERMS.md)
+- [Submission eligibility and MCP alternative](docs/PUBLISHING.md)
 
 ## Limits and safety
 
