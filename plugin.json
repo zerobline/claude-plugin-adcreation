@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mastermind-ad-engine",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Create and evaluate static ads with Mastermind's seven-stage creative workflow, evidence-aware claims, symbolic visual design, platform adaptation, critique and controlled A/B variants.",
   "author": {
     "name": "zerobline",
@@ -27,7 +27,7 @@
         "shortDescription": "Static ads that connect",
         "longDescription": "Create compelling static billboard, poster, print and social ad concepts using a structured seven-step method. Find an emotional truth, check product claims, flip category assumptions, choose an ownable visual symbol, adapt to the placement and test ideas critically. Produces image or editable SVG mockups when the OpenAI environment supports artifact creation, with an explicit fallback to detailed layout instructions otherwise. Generates controlled A/B variants and critiques existing ads. AI creative ratings are subjective, not validated campaign performance. No advertising platform, external service, or MCP connection is bundled.",
         "developerName": "zerobline",
-        "category": "Design",
+        "category": "Creativity",
         "capabilities": [
           "Read",
           "Write"
@@ -41,10 +41,13 @@
         "brandColor": "#E0282E",
         "brandColorDark": "#FF4D4F",
         "composerIcon": "./assets/icon.png",
-        "logo": "./assets/logo.png"
+        "logo": "./assets/logo.png",
+        "supportURL": "https://github.com/zerobline/claude-plugin-adcreation/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://github.com/zerobline/claude-plugin-adcreation/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/zerobline/claude-plugin-adcreation/blob/main/TERMS.md"
       },
       "publication": {
-        "release_notes": "OpenAI-only release with claim substantiation, symbol ownership, placement-aware rendering and evidence-honest critique. Includes controlled A/B variants and five acceptance scenarios."
+        "release_notes": "v0.3.2: correct supported Creativity category; add publisher support, privacy and terms URLs and public policies. Creative workflows and four skills remain unchanged. Skills-only directory submission remains subject to OpenAI eligibility."
       }
     }
   }
