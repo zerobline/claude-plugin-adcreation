@@ -1,4 +1,4 @@
-# Acceptance cases — OpenAI v0.3.1
+# Acceptance cases — OpenAI v0.3.2
 
 Run these prompts in clean OpenAI ChatGPT/Codex sessions with the plugin enabled. **Static inspection is not an installed skill execution test**. Record artifacts and actual behavior for a release decision.
 
